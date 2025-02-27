@@ -1,6 +1,4 @@
-# mlflow-poc
-
-### MLflow Setup with PostgreSQL
+# MLflow Setup with PostgreSQL
 
 ## 🚀  Step 1: Install MLflow
 
