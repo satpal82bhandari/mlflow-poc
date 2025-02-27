@@ -6,35 +6,48 @@ Ensure you have Conda installed on your system.
 
 ### 1. Activate Conda Environment
 
-```conda activate mlflow_env```
+```
+conda activate mlflow_env
+```
 
 ### 2. Install MLflow
 
-```pip install mlflow```
+```
+pip install mlflow
+```
 
 ### 3. (Optional) Install Extra Dependencies
 
 If you plan to track models with scikit-learn:
 
-```pip install scikit-learn```
+```
+pip install scikit-learn
+```
 
 ### 4. Verify MLflow Installation
 
-```mlflow --version```
+```
+mlflow --version
+```
 
 ## 📁  Step 2: Install postgresql 
 
 ### 1. Install PostgreSQL
 
-```sudo apt-get install postgresql postgresql-contrib postgresql-server-dev-all```
+```
+sudo apt-get install postgresql postgresql-contrib postgresql-server-dev-all
+```
 
 ### 2. Connect to PostgreSQL Database using CLI
 
-```sudo -u postgres psql```
+```
+sudo -u postgres psql
+```
 
 ### 3. Create Database and User
 
-```CREATE DATABASE mlflow;
+```
+CREATE DATABASE mlflow;
 CREATE USER mlflow WITH ENCRYPTED PASSWORD 'mlflow';
 GRANT ALL PRIVILEGES ON DATABASE mlflow TO mlflow;
 ```
@@ -47,7 +60,9 @@ pip install psycopg2-binary
 
 ### 5. Create Directory for MLflow Artifacts
 
-```mkdir -p /home/turbotest/mlruns```
+```
+mkdir -p /home/turbotest/mlruns
+```
 
 ### 6. Run MLflow Server
 ```
